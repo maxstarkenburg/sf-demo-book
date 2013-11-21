@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns:ng="http://angularjs.org/" ng-app="Reader">
   <head>
-    <!-- <base href="/"> --> <!-- PHIL changed --> 
+    <!-- <base href="/"> --> <!-- OERPUB change -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title ng:bind-template="{{metadata.bookTitle}}">TDO</title>
@@ -10,11 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css({.tmp,src}) styles/main.css -->
-    <link rel="stylesheet" href="https://static.hypothes.is/css/inject.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <!-- endbuild -->
-
+    <link rel="stylesheet" href="styles/24e182f2.main.css">
+    
 </head>
   <body>
 
@@ -23,15 +20,15 @@
       <script src="libs/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <epubreader src="../"></epubreader> <!-- Book source goes here -->
-
+    <epubreader src="../"></epubreader> <!-- OERPUB change, Book source goes here -->
+    
 
     <!-- Libs -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-
+    
     <!-- <script>window.jQuery || document.write('<script src="libs/jquery/jquery-1.10.2.min.js"><\/script>')</script> -->
-
+        
     <!-- Hypothes.is -->
 
     <script src="https://static.hypothes.is/lib/d3.min.js"></script>
@@ -52,30 +49,8 @@
     <script src="https://static.hypothes.is/js/plugin/heatmap.js"></script>
     <script src="https://static.hypothes.is/js/plugin/toolbar.js"></script>
     <script src="https://static.hypothes.is/js/inject.min.js"></script>
-
-    <!-- build:js({.tmp,src}) scripts/scripts.js -->
-
-    <!-- Render -->
-    <script src="./scripts/libs/epubjs/libs/underscore.js"></script> <!-- PHIL added -->
-    <script src="./scripts/libs/epubjs/epub.js"></script> <!-- OERPUB: use non minified to debug -->
-
-<!-- Phil changed paths to have . -->
-    <!-- Hooks -->
-    <script async src="./scripts/libs/epubjs/hooks.min.js"></script>
-    <script async src="./scripts/libs/epubjs/base.js"></script>
-    <script async src="./scripts/libs/epubjs/hypothesis.js"></script>
-    <script async src="./scripts/libs/epubjs/pageturns.js"></script>
-
-    <!-- <script src="./scripts/libs/angular/angular.min.js"></script> -->
-    <script src="./scripts/libs/angular/angular-touch.min.js"></script>
-
-    <script src="./scripts/app.js"></script>
-    <script src="./scripts/factories/ga_factory.js"></script>
-    <script src="./scripts/directives/epub-reader.js"></script>
-    <script src="./scripts/directives/epub-viewer.js"></script>
-    <script src="./scripts/directives/epub-toc.js"></script>
-    <script src="./scripts/directives/hypothesis.js"></script>
-    <!-- endbuild -->
+    
+    <script src="scripts/676cfceb.scripts.js"></script>
 
 </body>
 </html>
